@@ -1,0 +1,7 @@
+import yaml
+
+# 读取yaml文件
+with open("./data.yaml", "r", encoding="utf-8") as f:
+    # 解析yaml文件,返回值是字典
+    data = yaml.safe_load(f)
+    print("值:", data)
